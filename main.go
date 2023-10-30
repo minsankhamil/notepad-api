@@ -5,7 +5,7 @@ import (
 	"notepad-api/routes"
 	"os"
 
-	//"github.com/joho/godotenv"
+	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 )
 
