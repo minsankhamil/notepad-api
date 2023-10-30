@@ -14,7 +14,7 @@ func main() {
 	configs.InitDB()
 	e := echo.New()
 	routes.InitRoutes(e)
-	e.Start(":8000")
+	e.Logger.fatal(e.Start(envPortOr(":8000")))
 }
 
 func loadEnv() {
